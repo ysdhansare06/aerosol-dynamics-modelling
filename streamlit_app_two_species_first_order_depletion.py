@@ -430,12 +430,12 @@ with st.sidebar:
     st.subheader("Species A (LVOC/ELVOC-like)")
     log10_CvapA = st.slider("log10(Cvap_A) [#/m³]", 5.0, 50.0, float(np.log10(1e17)), 0.05)
     log10_PsatA = st.slider("log10(Psat_A) [Pa]", -30.0, -1.0, float(np.log10(1e-8)), 0.05)
-    k_depl_A = st.slider("k_depl_A (1/s)", 0.0, 5.0, 0.11, 0.01)
+    k_depl_A = st.slider("k_depl_A (1/s)", 0.0, 5.0, 0.93, 0.01)
 
     st.subheader("Species B (SVOC-like)")
     log10_CvapB = st.slider("log10(Cvap_B) [#/m³]", 5.0, 50.0, float(np.log10(5e17)), 0.05)
     log10_PsatB = st.slider("log10(Psat_B) [Pa]", -30.0, -1.0, float(np.log10(1e-6)), 0.05)
-    k_depl_B = st.slider("k_depl_B (1/s)", 0.0, 5.0, 0.11, 0.01)
+    k_depl_B = st.slider("k_depl_B (1/s)", 0.0, 5.0, 0.93, 0.01)
 
     st.subheader("Coagulation")
     coag_flag = st.selectbox(
