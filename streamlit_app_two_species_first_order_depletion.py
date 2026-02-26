@@ -421,7 +421,7 @@ with st.sidebar:
 
     st.subheader("Time")
     time_s = st.slider("Residence time (s)", 1.0, 400.0, 106.0, 1.0)
-    dt_s = st.slider("Time step dt (s)", 0.005, 5.00, 5.00, 0.005)
+    dt_s = st.slider("Time step dt (s)", 0.005, 5.00, 2.00, 0.005)
 
     st.subheader("Environment")
     T_C = st.slider("Temperature (°C)", 0.0, 40.0, 22.0, 0.5)
